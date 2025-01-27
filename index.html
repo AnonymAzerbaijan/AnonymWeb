@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnonymAzerbaijan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="/home/farhad/Desktop/html codes/logo.png" alt="Başlıq Şəkli" />
+        <h1>Xoş Gəldiniz</h1>
+        <p>Burda Telegram kanaımda payalşdığım bütün toolları və s. tapa bilərsiniz</p>
+    </header>
+    <nav id="buttons">
+        <button onclick="window.open('https://t.me/AnonymBots', '_blank')">Telegram Kanalım</button>
+        <button onclick="showPage('page1')">Telegram botlarım</button>
+        <button onclick="showPage('page2')">Avtomatik mesaj</button>
+        <button onclick="showPage('page3')">İstifadəçi çəkən</button>
+    </nav>
+    <div id="page1" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram botlarım</h2>
+        <button class="bot" onclick="window.open('https://t.me/argo_x_bot')">Argo X</button>
+        <button class="bot" onclick="window.open('https://t.me/fontazbot')">Font AZ</button>
+    </div>
+    <div id="page2" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram üçün avtomatik mesaj kodu</h2>
+        <p>Bu kod vasitəsi ilə telegram qruplarına öz hesabınızdan və ya fake hesabınızdan avtomatik mesaj göndərə bilərsiniz. Bu kodu Pydroid3 və ya termuxda işlədə bilərsiniz amma işlətməzdən əvvəl faylda dəyişikliklər etməlisiniz<br><br>
+
+            1. my.telegram.org burdan api id ve hash alın bu sayta giriş edib və kodda yerinə yazın<br>
+            2. Message yerinə dırnağın içinə göndərmək istediyiniz mesajı yazın<br>
+            3. Groups yerinə istədiyiniz qədər qrup tagları yazın mesaj bu qruplara göndəriləcək<br><br>
+            
+            Modulları yükləmə:<br><br>
+            
+            Termux:<br>
+            pkg install python<br>
+            pip install telethon<br><br>
+            
+            Pydroid3:<br>
+            pip install telethon<br><br>
+            
+            Bütün bunları etdikdən sonra kodu işlədinin və telegram hesabına giriş edin <br><br>
+            
+            Diqqət!!! Bot token or telephone number yazılan yerə bot token yazmayın</p>
+        <a href="/home/farhad/Desktop/html codes/automessage.py" download="automessage.py">Toxun və yüklə</a>
+    </div>
+    <div id="page3" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram kanallarından İstifadəçi çəkən kod</h2>
+        <p>Istədiyiniz qrupdan istifadəçi çəkən kod. Bu kod vasitəsi ilə istifadəçiləri açıq olan istədiyiniz qrupdan öz qrupunuza adam çəkə bilərsiniz amma bunun üçün sizə əlavə telegram hesabı lazımdır.<br><br>
+
+            Modullar:<br><br>
+            
+            Pydroid3:<br>
+            pip install telethon<br><br>
+            
+            Termux:<br>
+            pkg install python<br>
+            pip install telethon<br><br>
+            
+            Diqqət!!!Əgər kodda hər hansı bir şeyi səhv yazsaz koda qoşduğunuz telegram hesabı banlanacaq</p>
+        <a href="/home/farhad/Desktop/html codes/userscraper.py" download="userscraper.py">Toxun və yüklə</a>
+    </div>
+    <div id="pagexatire" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Xatirə</h2>
+        <video src="/home/farhad/Desktop/html codes/batman.mp4" controls autoplay loop muted class="xatire-gif"></video>
+        <p>Məni bu yolda ruhlandıran Ovhiz və İbrahimin xatirəsinə...</p>
+    </div>
+    <button class="elage-buton" onclick="window.open('https://t.me/AnonymAzerbaijan', '_blank')">Əlaqə</button>
+    <button class="rick-buton" onclick="window.open('https://youtu.be/dQw4w9WgXcQ?si=ZyneLyZbNP0APEBO', '_blank')">😁</button>
+    <button class="ovhizveibo-xatire" onclick="showPage('pagexatire')">Xatirə</button>
+
+
+    <script>
+        function showPage(pageId) {
+            // Düymələri gizlət
+            document.getElementById('buttons').style.display = 'none';
+
+            // Bütün səhifələri gizlət
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Seçilmiş səhifəni göstər
+            const selectedPage = document.getElementById(pageId);
+            selectedPage.classList.add('active');
+        }
+
+        function goBack() {
+            // Səhifələri gizlət
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Düymələri geri gətir
+            document.getElementById('buttons').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
