@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnonymAzerbaijan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/logo.png" alt="Başlıq Şəkli" />
+        <h1>Xoş Gəldiniz</h1>
+        <p>Burada Telegram kanalmda paylaşdığım bütün toolları və s. tapa bilərsiniz</p>
+    </header>
+    <nav id="buttons">
+        <button onclick="window.open('https://t.me/AnonymBots', '_blank')">Telegram Kanalım</button>
+        <button onclick="showPage('page1')">Telegram botlarım</button>
+        <button onclick="showPage('page4')">Admin panel tapan</button>
+        <button onclick="showPage('page5')">Tg adın yanıda saat</button>
+        <button onclick="showPage('page6')">Esp8266 Wifi Deauther</button>
+        <button onclick="showPage('page7')">Kali NetHunter rootsuz</button>
+        <button onclick="showPage('page2')">Avtomatik mesaj</button>
+        <button onclick="showPage('page3')">İstifadəçi çəkən</button>
+    </nav>
+    <div id="page1" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram botlarım</h2>
+        <button class="bot" onclick="window.open('https://t.me/argo_x_bot')">Argo X</button>
+        <button class="bot" onclick="window.open('https://t.me/fontazbot')">Font AZ</button>
+    </div>
+    <div id="page2" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram üçün avtomatik mesaj kodu</h2>
+        <p>Bu kod vasitəsi ilə telegram qruplarına öz hesabınızdan və ya fake hesabınızdan avtomatik mesaj göndərə bilərsiniz. Bu kodu Pydroid3 və ya termuxda işlədə bilərsiniz amma işlətməzdən əvvəl faylda dəyişikliklər etməlisiniz<br><br>
+
+            1. my.telegram.org burdan api id ve hash alın bu sayta giriş edib və kodda yerinə yazın<br>
+            2. Message yerinə dırnağın içinə göndərmək istediyiniz mesajı yazın<br>
+            3. Groups yerinə istədiyiniz qədər qrup tagları yazın mesaj bu qruplara göndəriləcək<br><br>
+            
+            Modulları yükləmə:<br><br>
+            
+            Termux:<br>
+            pkg install python<br>
+            pip install telethon<br><br>
+            
+            Pydroid3:<br>
+            pip install telethon<br><br>
+            
+            Bütün bunları etdikdən sonra kodu işlədinin və telegram hesabına giriş edin <br><br>
+            
+            Diqqət!!! Bot token or telephone number yazılan yerə bot token yazmayın</p>
+        <a href="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/automessage.py" download class="automessage.py">Toxun və kodu gör</a>
+    </div>
+    <div id="page3" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram kanallarından İstifadəçi çəkən kod</h2>
+        <p>Istədiyiniz qrupdan istifadəçi çəkən kod. Bu kod vasitəsi ilə istifadəçiləri açıq olan istədiyiniz qrupdan öz qrupunuza adam çəkə bilərsiniz amma bunun üçün sizə əlavə telegram hesabı lazımdır.<br><br>
+
+            Modullar:<br><br>
+            
+            Pydroid3:<br>
+            pip install telethon<br><br>
+            
+            Termux:<br>
+            pkg install python<br>
+            pip install telethon<br><br>
+            
+            Diqqət!!!Əgər kodda hər hansı bir şeyi səhv yazsaz koda qoşduğunuz telegram hesabı banlanacaq</p>
+        <a href="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/userscraper.py" download class="userscraper.py">Toxun və kodu gör</a>
+    </div>
+    <div id="page4" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Websaytın admin panelini tapan Tool</h2>
+        <img class="adminimg" src="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/adminpanel.jpg" />
+        <p>Yükləmə (termux və linux):<br><br>
+            1. pip install colorama<br>
+            2. git clone https://github.com/frkndncr/admin-panel-finder.git<br>
+            3. cd admin-panel-finder<br>
+            4. python admin-login-finder.py<br><br>
+            
+            Qeyd: Bu sadəcə kiçik bir tooldur bunun linux ücün daha ətraflı axtaranıda var.</p>
+    </div>
+    <div id="page5" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Telegram adın yanında saat</h2>
+        <p>Bu kodu açıb içinə öz api id və api hashınızı yazıb kodu saxlayın sonra kodu başladanda öz telegram hesabınıza giriş edin və hazırdır artıq adınızın yanında saat olacaq<br><br>
+
+            my.telegram.org - api alacağınız yer</p>
+            <a href="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/tgsaat.py" download class="tgsaat.py">Toxun və kodu gör</a>
+    </div>
+    <div id="page6" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Esp8266 Wifi Deauther</h2>
+        <p>1. https://deauther.com/docs/download/ burdan öz esp8266 modelinizə uyğun .bin faylını yükləyin.<br><br>
+
+            2. https://esp.huhn.me/ burdan bin faylını esp8266-nıza yükləyin (yalnız pcdən etmək olur).<br><br>
+            
+            3. Esp8266-ya elektrik verin və pwned adlı wifi yaranacaq ona qoşulun (parol: deauther).<br><br>
+            
+            4. Brauzerə həmin wifinin ipsini yazıb web interfeysə daxil olun.<br><br>
+            
+            5. Istədiyiniz wifini seçib deauth hücumunu başladın.</p>
+    </div>
+    <div id="page7" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Kali NetHunter rootsuz</h2>
+        <img class="kaliimg" src="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/kalinh.jpg" />
+        <p> Diqqət!! Bunu yükləmək ücün yaddaşınızda ən az 15 gb boş yer olmalıdır və termuxun googledən yüklənmiş yeni versiyası olmalıdır<br><br>
+            
+            1. Termuxa apt update && apt upgrade yazıb termuxu güncəlləyin<br>
+            2. pkg install wget yazaraq wgeti yükləyin<br>
+            3. wget -O install-nethunter-termux https://offs.ec/2MceZWr<br>
+            4. chmod +x install-nethunter-termux<br>
+            5. ./install-nethunter-termux yazdıqdan sonra 1- seçib enter vurun və biraz gözləyin 2 gb lıq fayl yüklənəcək.<br>
+            6. Fayl yükləndikdən sonra yenə ./install-nethunter-termux yazıb 1 seçin sonra isə n seçin və təxmini 10 dəqiqə gözləyib yenə n seçin<br>
+            7. mkdir chroot<br>
+            8. mv kali-arm64/ chroot/<br>
+            9. Yenə ./install-nethunter-termux yazıb 1 seçin və digər seçimlərdə n seçin.<br>
+            10. Təbriklər siz kali nethunteri yüklədiniz termuxda nh yazaraq nethunterə girə bilərsiniz.<br><br>
+            
+            Sudonun parolu: kali</p>
+    </div>
+    <div id="pagexatire" class="page">
+        <div class="close" onclick="goBack()">X</div>
+        <h2>Xatirə</h2>
+        <video src="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/batman.mp4" controls autoplay loop muted class="xatire-gif"></video>
+        <p>Məni bu yolda ruhlandıran Ovhiz və İbrahimin xatirəsinə...</p>
+    </div>
+    <button class="elage-buton" onclick="window.open('https://t.me/AnonymAzerbaijan', '_blank')">Əlaqə</button>
+    <button class="rick-buton" onclick="window.open('https://youtu.be/dQw4w9WgXcQ?si=ZyneLyZbNP0APEBO', '_blank')">😁</button>
+    <button class="ovhizveibo-xatire" onclick="showPage('pagexatire')">Xatirə</button>
+    <video autoplay muted loop id="background-video">
+        <source src="https://raw.githubusercontent.com/AnonymAzerbaijan/AnonymWeb/refs/heads/main/matrix.mp4" type="video/mp4">
+    </video>
+    
+
+    <script>
+        function showPage(pageId) {
+            // Düymələri gizlət
+            document.getElementById('buttons').style.display = 'none';
+
+            // Bütün səhifələri gizlət
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Seçilmiş səhifəni göstər
+            const selectedPage = document.getElementById(pageId);
+            selectedPage.classList.add('active');
+        }
+
+        function goBack() {
+            // Səhifələri gizlət
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Düymələri geri gətir
+            document.getElementById('buttons').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
